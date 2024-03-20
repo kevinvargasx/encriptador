@@ -69,6 +69,5 @@ function asignarTextoElemento(elemento, texto){
 }
 function condicionesIniciales(){
     asignarTextoElemento('h1', 'Encriptador');
-    asignarTextoElemento('p','Ingrese el texto a encriptar o desencriptar')
 }
 condicionesIniciales();

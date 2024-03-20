@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -26,6 +27,7 @@ body::before {
     width: 100%;
     height: 100%;
     opacity: 0.4;
+    z-index: -1000;
 }
 
 .container {
@@ -73,6 +75,15 @@ body::before {
     font-weight: 700;
     border: none;
     margin-top: 2rem;
+    cursor: pointer;
+}
+.btnEncriptar:hover, .btnDesencriptar:hover, .btnCopiar:hover{
+    background: #008a8e;
+
+}
+.btnEncriptar:active, .btnDesencriptar:active, .btnCopiar:active{
+    background: #c526d3;
+
 }
 
 .campo-texto, .mensaje {
@@ -83,7 +94,7 @@ body::before {
     border: none;
     color: #673de6;
     padding: 2rem;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -96,23 +107,34 @@ h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
     padding-bottom: 1.5rem;
+    
 }
 
 p,
 button {
     font-family: 'Inter', sans-serif;
 }
-
+.texto__parrafo, i {
+    color: yellow;
+}
 .texto__parrafo {
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 1rem;
 }
 
-.footer {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 2rem; /* Espacio superior */
+.copyright a{
+    color: yellow;
+    cursor: pointer;
+    z-index: 1;
 }
+.copyright a:hover{
+    color: rgb(48, 207, 255);
+}
+#mensaje-copiado{
+    color: yellow;
+}
+
 @media (max-width: 768px) {
     .container__contenido {
         display: block;
